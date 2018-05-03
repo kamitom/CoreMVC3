@@ -15,11 +15,14 @@ var deptName3 = "Baby"; //where?
 
 console.log("Hello, Pluralsight with Console.log");
 
+
+
 var theForm = document.getElementById("theForm");
 theForm.hidden = true;
 
-// var theForm2 = $("theForm");
-// theForm2.hidden = true;
+var xForm = $("#theForm");
+
+
 
 
 var button = document.getElementById("buyButton");
