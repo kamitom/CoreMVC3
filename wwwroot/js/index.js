@@ -1,4 +1,7 @@
-﻿
+﻿/// <reference path="../typings/globals/jquery/index.d.ts" />
+
+
+
 var a = "";
 var s = 123;
 
@@ -18,9 +21,12 @@ console.log("Hello, Pluralsight with Console.log");
 
 
 var theForm = document.getElementById("theForm");
-theForm.hidden = true;
+// theForm.hidden = true;
 
+//TODO: 是有沒有這麼累 為了個 jquery 的 intellisense ...
+//REF: https://youtu.be/GjqogBulgtE 
 var xForm = $("#theForm");
+// xForm.hide();
 
 
 
