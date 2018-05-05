@@ -1,7 +1,5 @@
 ﻿/// <reference path="../typings/globals/jquery/index.d.ts" />
 
-
-
 var a = "";
 var s = 123;
 
@@ -18,8 +16,6 @@ var deptName3 = "Baby"; //where?
 
 console.log("Hello, Pluralsight with Console.log");
 
-
-
 var theForm = document.getElementById("theForm");
 // theForm.hidden = true;
 
@@ -29,13 +25,16 @@ var xForm = $("#theForm");
 // xForm.hide();
 
 
-
-
-var button = document.getElementById("buyButton");
-button.addEventListener("click", function(){
-    //alert("buying Items.");
-    console.log("buying item.")
+var btn2 = $("#buyButton");
+btn2.on("click", function(){
+    console.log("hello, on btn2 click event!");
 });
+
+// var button = document.getElementById("buyButton");
+// button.addEventListener("click", function(){
+//     //alert("buying Items.");
+//     console.log("buying item.")
+// });
 
 var testIMG = document.getElementById("testImg");
 testIMG.addEventListener("mouseover", function(){
@@ -45,8 +44,15 @@ testIMG.addEventListener("mouseover", function(){
 
 
 //TODO: ? WHY
-var productInfo = document.getElementsByClassName("product-props");
-var listItems = productInfo.item[0].children;
+var productInfo2 = document.getElementsByClassName(".product-props");
+// var listItems = productInfo.item[0].children;
+
+var productInfo = $(".product-props li");
+productInfo.on("click", function(){
+    // console.log("you click on " + this.innerText);  
+    console.log("you click on " + $(this).text());
+});
+
 
 //TODO: fix here?
 //var productInfo2 = document.getElementsByClassName("product-props");
