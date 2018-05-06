@@ -7,4 +7,6 @@
 + SHIFT + OPTION + F - html 自動排版
 + CMD + F2 - 可以區塊修改相同字串
 + practical jQuery 練習
++ practical ASP.NET MVC 
++ SHIFT + OPTION + 向下鍵 : 可複製同樣的一行
 
