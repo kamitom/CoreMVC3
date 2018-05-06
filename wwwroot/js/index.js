@@ -67,9 +67,13 @@ $(document).ready(function () {
 
     $loginToggle.on("click", function () {
         // $popupForm.toggle(1000);
-        // $popupForm.slideToggle(1000);
-        $popupForm.fadeToggle(1000);
+        $popupForm.slideToggle(1000);
+        // $popupForm.fadeToggle(1000);
     });
+
+    //FOR RANDOM VIEW 
+    $("#verHere").text(Math.random());
+
 
 });
 
