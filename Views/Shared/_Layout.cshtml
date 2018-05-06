@@ -12,6 +12,9 @@
 <body>
     <header>
         <h1>TCSW</h1>
+            <div>
+                <p id="verHere"></p>
+            </div>
         <menu>
             <ul>
                 <li><a asp-controller="App" asp-action="Index">Home</a></li>
@@ -27,12 +30,10 @@
     </section>
     <footer>
         &copy; 2018 TCSW
-        <div>
-            <p id="verHere"></p>
-        </div>
     </footer>
     <script src="~/bin/jquery/dist/jquery.min.js"></script>
     <script src="~/js/index.js"></script>
+    @RenderSection("scripts", false)
 </body>
 
 </html>

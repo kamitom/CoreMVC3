@@ -89,3 +89,9 @@ menu li {
     #verHere {
         font-size: 10px;
     }
+
+    #sentMail {
+        /* background-color: brown; */
+        color: brown;
+        
+    }
