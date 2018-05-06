@@ -9,4 +9,5 @@
 + practical jQuery 練習
 + practical ASP.NET MVC 
 + SHIFT + OPTION + 向下鍵 : 可複製同樣的一行
++ deploy to Azure 出包勒 - You do not have permission to view this directory or page.
 
