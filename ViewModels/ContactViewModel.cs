@@ -13,7 +13,7 @@ namespace CoreMVC3.ViewModels
         [Required]
         public string Subject { get; set; }
         [Required]
-        [MaxLength(100, ErrorMessage="TOO LONG OVER 200 CHARACTER")]
+        [MaxLength(200, ErrorMessage="TOO LONG OVER 200 CHARACTER")]
         public string Message { get; set; } 
 
 
