@@ -1,4 +1,16 @@
-﻿body {
+﻿
+.product-info img {
+    margin: 3px;
+    /* float: left; */
+    border: 1px solid;
+    border-color: black;
+    max-width: 150px;
+}
+
+/* 
+
+
+body {
     
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -54,7 +66,7 @@ ul.product-props li {
 }
 
 #loginToggle {
-    /* 可顯示手指形狀 */
+    
     cursor: pointer; 
 }
 
@@ -91,7 +103,9 @@ menu li {
     }
 
     #sentMail {
-        /* background-color: brown; */
         color: brown;
         
-    }
+    } 
+
+
+    */

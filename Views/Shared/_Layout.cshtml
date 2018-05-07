@@ -6,32 +6,40 @@
     <meta charset="utf-8" />
     <title>avengers 3 - @ViewBag.Title</title>
 
-<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link href="~/css/site.css" rel="stylesheet" />
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="~/css/site.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <header>
-        <h1>TCSW</h1>
-            <div>
-                <p id="verHere"></p>
+    <div class="navbar navbar-inverse">
+        <header class="container">
+            <div class="navbar-header">
+                <div class="navbar-brand">TCSW</div>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#menu">&#9776;</button>
             </div>
-        <menu>
-            <ul>
-                <li><a asp-controller="App" asp-action="Index">Home</a></li>
-                <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-                <li><a asp-controller="App" asp-action="About">About</a></li>
-                <li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank">docs.emmet</a></li>
-            </ul>
-        </menu>
-    </header>
-    <section>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                    <li><a asp-controller="App" asp-action="About">About</a></li>
+                    <li><a href="https://docs.emmet.io/cheat-sheet/" target="_blank">docs.emmet</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <section class="container">
        <!-- <h2>@ViewBag.Title</h2> -->
         @RenderBody()
     </section>
-    <footer>
-        &copy; 2018 TCSW
+    <footer class="container">
+        <div class="text-center">
+        &copy; 2018 TCSW        
+        <p id="verHere"></p>
+        </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
