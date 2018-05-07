@@ -11,4 +11,4 @@
 + practical ASP.NET MVC
 + SHIFT + OPTION + 向下鍵 : 可複製同樣的一行
 + deploy to Azure 出包勒 - You do not have permission to view this directory or page.
-+ fix some markdonw rule
++ fix some markdonw rule: <https://github.com/DavidAnson/markdownlint/blob/v0.8.1/doc/Rules.md#md032>
