@@ -9,28 +9,31 @@
     <div class="well">
         <form method="POST">
             <div asp-validation-summary="ModelOnly"></div>
+
+            <div class="form-group">
             <label asp-for="Name">Your name:</label>
-            <br />
-            <input type="text" asp-for="Name" />
-            <span asp-validation-for="Name"></span>
-            <br />
+            <input type="text" asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-warning"></span>
+            </div>
+            <div class="form-group">
             <label asp-for="Email">Email:</label>
-            <br />
-            <input type="email" asp-for="Email" />
-            <span asp-validation-for="Email"></span>
-            <br />
+            <input type="email" asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
             <label asp-for="Subject">Subject:</label>
-            <br />
-            <input type="text" asp-for="Subject" />
-            <span asp-validation-for="Subject"></span>
-            <br />
+            <input type="text" asp-for="Subject"  class="form-control"/>
+            <span asp-validation-for="Subject" class="text-warning"></span>
+            </div>
+            <div class="form-group">
             <label asp-for="Message">Message:</label>
-            <br />
-            <textarea rows="4" asp-for="Message"></textarea>
-            <san asp-validation-for="Message"></span>
-            <br />
-            <input type="submit" value="Send Message" />
-            <div id="sentMail">@ViewBag.UserMessage</div>
+            <textarea rows="4" asp-for="Message" class="form-control"></textarea>
+            <san asp-validation-for="Message" class="text-warning"></span>
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-envelope"></i> 來寄信吧</button>
+            <div id="sentMail" class="text-success">@ViewBag.UserMessage</div>
+            </div>
         </form>        
     </div>
 

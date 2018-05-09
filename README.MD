@@ -17,4 +17,4 @@
 > 1. 解決 do not have permission to view 的問題 - 請先 dotnet new webconfig
 > 2. 解決  http 502.5 錯誤 - web.config 的 aspNetCore arguments 要自己手動指定好
 
-+ 待續.
++ bower install Font-Awesome --save
