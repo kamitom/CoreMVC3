@@ -1,0 +1,10 @@
+/Users/tomha/Repos/CoreMVC3/bin/Release/netcoreapp2.0/CoreMVC3.deps.json
+/Users/tomha/Repos/CoreMVC3/bin/Release/netcoreapp2.0/CoreMVC3.runtimeconfig.json
+/Users/tomha/Repos/CoreMVC3/bin/Release/netcoreapp2.0/CoreMVC3.runtimeconfig.dev.json
+/Users/tomha/Repos/CoreMVC3/bin/Release/netcoreapp2.0/CoreMVC3.dll
+/Users/tomha/Repos/CoreMVC3/bin/Release/netcoreapp2.0/CoreMVC3.pdb
+/Users/tomha/Repos/CoreMVC3/obj/Release/netcoreapp2.0/CoreMVC3.csproj.CoreCompileInputs.cache
+/Users/tomha/Repos/CoreMVC3/obj/Release/netcoreapp2.0/CoreMVC3.AssemblyInfoInputs.cache
+/Users/tomha/Repos/CoreMVC3/obj/Release/netcoreapp2.0/CoreMVC3.AssemblyInfo.cs
+/Users/tomha/Repos/CoreMVC3/obj/Release/netcoreapp2.0/CoreMVC3.dll
+/Users/tomha/Repos/CoreMVC3/obj/Release/netcoreapp2.0/CoreMVC3.pdb

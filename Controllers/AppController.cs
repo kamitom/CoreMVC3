@@ -35,7 +35,7 @@ public readonly IMailService _mailService;
             //TODO: send email
             _mailService.SendMessage("tom.god@gmail.com", model.Subject, $"Form: {model.Name} - {model.Email}, Message: {model.Message}");
 
-            ViewBag.UserMessage = "Mail sent.";
+            ViewBag.UserMessage = "Mail sent. Robbie!";
             ModelState.Clear();
         } 
 

@@ -1,0 +1,12 @@
+/Users/tomha/Repos/CoreMVC3
+--output-path=obj/Release/netcoreapp2.0/
+--application-name=CoreMVC3
+--content-root=/Users/tomha/Repos/CoreMVC3
+--file=/Users/tomha/Repos/CoreMVC3/Pages/Error.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Pages/_ViewStart.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Views/App/About.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Views/App/Contact.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Views/App/Index.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Views/Shared/_Layout.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Views/_ViewImports.cshtml
+--file=/Users/tomha/Repos/CoreMVC3/Views/_ViewStart.cshtml

@@ -12,3 +12,9 @@
 + SHIFT + OPTION + 向下鍵 : 可複製同樣的一行
 + deploy to Azure 出包勒 - You do not have permission to view this directory or page.
 + fix some markdonw rule: <https://github.com/DavidAnson/markdownlint/blob/v0.8.1/doc/Rules.md#md032>
++ aspnet core 部署相關:
+
+> 1. 解決 do not have permission to view 的問題 - 請先 dotnet new webconfig
+> 2. 解決  http 502.5 錯誤 - web.config 的 aspNetCore arguments 要自己手動指定好
+
++ 待續.
