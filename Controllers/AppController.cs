@@ -16,7 +16,7 @@ public readonly IMailService _mailService;
         return View ();
     }
     public IActionResult About () {
-        ViewBag.Title = "About us";
+        ViewBag.Title = "About me";
         return View ();
     }
 

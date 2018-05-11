@@ -19,3 +19,4 @@
 
 + bower install Font-Awesome --save
 + EFCore configuration 初步測試
++ unrelated: 加了一首歌.
