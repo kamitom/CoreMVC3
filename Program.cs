@@ -17,8 +17,20 @@ namespace CoreMVC3 {
 
         public static IWebHost BuildWebHost (string[] args) =>
             WebHost.CreateDefaultBuilder (args)
+            .ConfigureAppConfiguration(SetupConfiguration)
             .UseStartup<Startup> ()
             .UseKestrel()
             .Build ();
+
+        private static void SetupConfiguration(WebHostBuilderContext ctx, IConfigurationBuilder builder)
+        {
+            // throw new NotImplementedException();
+            builder.Sources.Clear();
+
+            builder.AddJsonFile("config.json", false, true)
+            .AddEnvironmentVariables();
+
+
+        }
     }
 }

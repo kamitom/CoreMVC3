@@ -18,3 +18,4 @@
 > 2. 解決  http 502.5 錯誤 - web.config 的 aspNetCore arguments 要自己手動指定好
 
 + bower install Font-Awesome --save
++ EFCore configuration 初步測試
