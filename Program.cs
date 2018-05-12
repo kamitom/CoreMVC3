@@ -25,6 +25,8 @@ namespace CoreMVC3 {
         private static void SetupConfiguration(WebHostBuilderContext ctx, IConfigurationBuilder builder)
         {
             // throw new NotImplementedException();
+
+            //removing the config options.
             builder.Sources.Clear();
 
             builder.AddJsonFile("config.json", false, true)

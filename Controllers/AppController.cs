@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using CoreMVC3.Data;
 using CoreMVC3.Services;
 using CoreMVC3.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -6,9 +8,21 @@ using Microsoft.AspNetCore.Mvc;
 public class AppController : Controller {
 
 public readonly IMailService _mailService;
-    public AppController(IMailService mailService)
+public readonly DutchContext _context;
+    public AppController(IMailService mailService, DutchContext context)
     {
         _mailService = mailService;
+        _context = context;
+    }
+
+    public IActionResult Shop() {
+        // var results = _context.Products.ToList();
+
+        var results = from p in _context.Products
+        orderby p.Category
+        select p;
+
+        return View(results.ToList());
     }
 
     public IActionResult Index () {

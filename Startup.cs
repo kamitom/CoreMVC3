@@ -22,9 +22,10 @@ namespace CoreMVC3 {
         }
         public void ConfigureServices (IServiceCollection services) {
             
-            // services.AddDbContext<DutchContext>(cfg => {
-            //     cfg.UseSqlServer(_config.GetConnectionString("DutchConnectionString"));
-            // });
+            services.AddDbContext<DutchContext>(cfg => {
+                cfg.UseSqlServer(_config.GetConnectionString("DutchConnectionString"));
+            });
+
             services.AddTransient<IMailService, NullMailService>();
             services.AddMvc ();
         }
