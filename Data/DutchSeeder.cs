@@ -14,7 +14,6 @@ namespace CoreMVC3.Data {
         public DutchSeeder (DutchContext ctx, IHostingEnvironment hosting) {
             this._Hosting = hosting;
             this._Ctx = ctx;
-
         }
 
         public void Seed () {
@@ -44,10 +43,6 @@ namespace CoreMVC3.Data {
 
                 _Ctx.Orders.Add(order);
                 _Ctx.SaveChanges();
-
-
-
-
             }
         }
     }

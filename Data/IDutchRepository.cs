@@ -7,7 +7,7 @@ namespace CoreMVC3.Data
     {
          IEnumerable<Product> GetAllProducts ();
          IEnumerable<Product> GetProductsByCategory(string category);
-         bool SaveAll();
+         bool SaveAll(); //todo: ?
 
     }
 }
