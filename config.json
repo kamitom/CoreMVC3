@@ -1,8 +1,0 @@
-{
-"Colors": { "Favorite": "blue"
-},
-    "ConnectionStrings": {
-        "DutchConnectionString": "Data Source=1.2.3.4,1433;Initial Catalog=HelloDb;Integrated Security=False;User ID=sa;Password=198aar",
-        "profileName": "gCloudTestSa"  
-    }
-}
