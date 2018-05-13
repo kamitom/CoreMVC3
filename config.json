@@ -3,6 +3,6 @@
 },
     "ConnectionStrings": {
         "DutchConnectionString": "Data Source=35.196.57.118,1433;Initial Catalog=HelloDb;Integrated Security=False;User ID=sa;Password=1988@usa",
-        "profileName": "gCloudTestSa"
+        "profileName": "gCloudTestSa"  
     }
 }

@@ -20,3 +20,4 @@
 + bower install Font-Awesome --save
 + EFCore configuration 初步測試
 + unrelated: 加了一首歌.
++ 敏感性資料 - config.josn 不用上傳 .gitignore
