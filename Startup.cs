@@ -27,7 +27,9 @@ namespace CoreMVC3 {
             });
 
             services.AddTransient<IMailService, NullMailService>();
+
             services.AddTransient<DutchSeeder>();
+            services.AddScoped<IDutchRepository, DutchRepository>();
 
             services.AddMvc ();
         }

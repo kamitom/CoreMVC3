@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 namespace CoreMVC3.Data {
     public class DutchSeeder {
         private DutchContext _Ctx { get; }
-        public IHostingEnvironment _Hosting { get; }
+        private IHostingEnvironment _Hosting { get; }
 
         public DutchSeeder (DutchContext ctx, IHostingEnvironment hosting) {
             this._Hosting = hosting;

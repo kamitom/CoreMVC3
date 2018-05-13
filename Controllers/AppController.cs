@@ -6,23 +6,20 @@ using CoreMVC3.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 public class AppController : Controller {
+    private IDutchRepository _repository { get; }
 
-public readonly IMailService _mailService;
-public readonly DutchContext _context;
-    public AppController(IMailService mailService, DutchContext context)
-    {
+    public readonly IMailService _mailService;
+    public AppController (IMailService mailService, IDutchRepository repository) {
+        this._repository = repository;
         _mailService = mailService;
-        _context = context;
     }
 
-    public IActionResult Shop() {
+    public IActionResult Shop () {
         // var results = _context.Products.ToList();
 
-        var results = from p in _context.Products
-        orderby p.Category
-        select p;
+        var results = _repository.GetAllProducts();
 
-        return View(results.ToList());
+        return View (results);
     }
 
     public IActionResult Index () {
@@ -47,13 +44,13 @@ public readonly DutchContext _context;
         ViewBag.Title = "Contact us";
         if (ModelState.IsValid) {
             //TODO: send email
-            _mailService.SendMessage("tom.god@gmail.com", model.Subject, $"Form: {model.Name} - {model.Email}, Message: {model.Message}");
+            _mailService.SendMessage ("tom.god@gmail.com", model.Subject, $"Form: {model.Name} - {model.Email}, Message: {model.Message}");
 
             ViewBag.UserMessage = "Mail sent. Robbie!";
-            ModelState.Clear();
-        } 
+            ModelState.Clear ();
+        }
 
-        return View();
+        return View ();
     }
 
     // public IActionResult Error () {
