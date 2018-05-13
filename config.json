@@ -2,7 +2,7 @@
 "Colors": { "Favorite": "blue"
 },
     "ConnectionStrings": {
-        "DutchConnectionString": "Server=192.168.1.82;Database=LeaderTest;User Id=sa; Password=d!g!w!n2013;",
-        "profileName": "LeaderTest"
+        "DutchConnectionString": "Data Source=35.196.57.118,1433;Initial Catalog=HelloDb;Integrated Security=False;User ID=sa;Password=1988@usa",
+        "profileName": "gCloudTestSa"
     }
 }
