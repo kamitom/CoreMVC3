@@ -11,8 +11,8 @@ using System;
 namespace CoreMVC3.Migrations
 {
     [DbContext(typeof(DutchContext))]
-    [Migration("20180514042124_initialCreate")]
-    partial class initialCreate
+    [Migration("20180515014652_initialCreateLinux")]
+    partial class initialCreateLinux
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

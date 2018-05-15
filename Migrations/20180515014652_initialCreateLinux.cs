@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace CoreMVC3.Migrations
 {
-    public partial class InitialDB : Migration
+    public partial class initialCreateLinux : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
