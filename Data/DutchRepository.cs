@@ -12,7 +12,8 @@ namespace CoreMVC3.Data {
 
         public IEnumerable<Product> GetAllProducts () {
             return _Ctx.Products
-                .OrderBy (p => p.Title)
+                // .OrderBy (p => p.Title)
+                .OrderBy (p => p.Artist)
                 .ToList ();
         }
 

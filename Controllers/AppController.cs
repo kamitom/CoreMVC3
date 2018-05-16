@@ -23,11 +23,13 @@ public class AppController : Controller {
     }
 
     public IActionResult Index () {
-        // throw new InvalidOperationException("bad things happend");
+        // throw new InvalidOperationException("bad things happend");  //TODO: 測試 error.
         return View ();
     }
     public IActionResult About () {
         ViewBag.Title = "About me";
+
+        // throw new InvalidOperationException("Bad things happend");
         return View ();
     }
 
